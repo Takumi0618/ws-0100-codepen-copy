@@ -8,28 +8,96 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- googlefont -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <div class="l-flex l-container">
-      <div class="l-sidebar sidebar">
+      <!-- サイドバー
+      ----------------------------------------------->
+      <div class="l-sidebar sidebar" id="sidebar">
         <!-- Write code for Sidebar-->
+        <h1 class="side-title">C<span class="material-icons">add_circle</span>DE PEN</h2>
+        <p>TRY OUR ONLINE EDITOR</p>
+        <button>Start Coding</button>
+        <h2 id="explore">EXPLORE</h2>
+        <ul>
+          <li><a href="">Picks</a></li>
+          <li><a href="">Popular</a></li>
+          <li><a href="">Topics</a></li>
+        </ul>
+        <h2 id="grow">GROW</h2>
+        <ul>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">CodePens<span>PRO</span></a></li>
+          <li><a href="">Topics</a></li>
+        </ul>
+        <h2 id="companies">COMPANIES</h2>
+        <ul>
+          <li><a href="">Hire Talent</a></li>
+          <li><a href="">Create a Team</a></li>
+          <li><a href="">Advertise</a></li>
+        </ul>
+        <ul id="side-nav">
+          <li><a href="">Newletter</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Doc&Support</a></li>
+        </ul>
       </div>
-      <main class="l-main">
-      <header class="l-header">
-        <!-- Write code for Header-->
-      </header>
-      <div class="l-content">
-        <section class="l-section">
-          <div class="hero">
-             <!-- Write code for Hero-->
+
+      <!-- メイン 
+      ------------------------------------------------------------------>
+      <main class="l-main" id="main">
+        <!-- ヘッダー ------------------------------------------------>
+        <header class="l-header">
+          <!-- Write code for Header-->
+          <div class="search">
+            <span class="material-icons">search</span>
+            <input type="text" placeholder="Search CodePen...">
           </div>
-      </div>
-        </section>
+          <button class="sign-up" style="color: #000;">
+            Sign Up
+          </button>
+          <button class="log-in">
+            Log In
+          </button>
+        </header>
+
+
+        <div class="l-content">
+          <section class="l-section">
+            <div class="hero">
+              <!-- Write code for Hero-->
+              <h1><span class="material-icons">add_circle</span><br>
+              The best place to build, test, and discover front-end code.</h1>
+              <p>CodePen is a social development environment for front-end designers and developers. Build and deploy a website, show off your work, build test cases to learn and debug, and find inspiration.</p>
+              <button>Sign Up for Free</button>
+            </div>
+            <div class="s-container">
+              <div class="image">
+                <div class="sm-image">
+                  <h2><span class="material-icons">settings</span>HTML</h2>
+                  <p></p>
+                </div>
+                <div class="sm-image">
+                  <h2><span class="material-icons">settings</span>SCSS</h2>
+                  <p></p>
+                </div>
+                <div class="sm-image">
+                  <h2><span class="material-icons">settings</span>JS</h2>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
         <section class="l-section">
           <div class="l-flex l-flex-wrap features">
              <!-- Write code for Features-->
           </div>
         </section>
+
         <section class="l-section">
           <div class="product-item-list">
              <!-- Write code for Product List-->

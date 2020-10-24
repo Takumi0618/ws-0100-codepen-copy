@@ -4,4 +4,119 @@
     align-items: center
 .l-flex-wrap
     flex-wrap: wrap
+$background-color2: #333
 
+
+/* サイドバー ----------------------------------------------- */ 
+#sidebar 
+    width: 200px;
+    padding-top: 25px; 
+    background: $background-color2;
+    height: 100%;
+
+    h1
+        text-align: center;
+        margin: 0;    
+    p
+        font-size: 13px;
+        margin-bottom: 0;
+        text-align: center;
+    button
+        width: 160px;
+        height: 40px;
+        background: #000;
+        font-size: 15px;
+        /* border-image: linear-gradient(#f6b73c, #4d9f0c) 30; */
+        border: 1px solid lightgreen;
+        border-radius: 5px;
+        margin-left: 20px;
+    h2
+        margin: 15px 0 5px 20px;
+        font-size: 13px;
+    #explore
+        color: orange;
+    #grow
+        color: green;
+        span
+            color: orange;
+            display: inline-block;
+            background: yellow;
+    #companies
+        color: skyblue;
+    ul
+        padding: 0;
+        margin-top: 5px;
+    a
+        display: block;
+    a:hover
+        background: #000;
+    li
+        padding-left: 20px;
+        
+
+/* メイン ----------------------------------------------- */ 
+#main 
+    width: calc(100% - 200px);
+    padding: 5px;
+
+/* ヘッダー ----------------------------------- */
+.l-header
+    display: flex;
+    justify-content: space;
+    width: 100%;
+    input
+        min-width: 200px;
+        width: calc(100% - 40px);
+        margin: 3px;
+        background: $background-color2;
+        border: $background-color2;
+        border-radius: 6px;
+        font-size: 20px;
+    button
+        min-width: 100px;
+        height: 40px;
+        font-size: 14px;
+        border-radius: 6px;
+        margin-left: 10px;
+    .sign-up
+        background: #28a44a;
+        border: #28a44a;
+    .log-in
+        background: #444;
+        border: #444;    
+
+    .search
+        background: $background-color2;
+        width: calc(100% - 250px);
+        min-width: 250px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        display: flex;
+        span
+            height: 40px;
+            width: 40px;
+            position: relative;
+            top: 8px;
+            left: 5px;
+
+.l-section
+    display: flex;
+
+.hero
+    width: 50%;
+    padding: 50px 30px;
+    h1
+        font-size: 45px;
+
+.s-container
+    width: 50%;
+    .image
+        background: #444;
+        width: 500px;
+        height: 400px;
+        margin: 60px auto;
+        border-radius: 5px;
+        .sm-image
+            width: 300px;
+            height: 140px;
+            background: lime;
