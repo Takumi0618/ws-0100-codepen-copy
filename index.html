@@ -18,7 +18,7 @@
       ----------------------------------------------->
       <div class="l-sidebar sidebar" id="sidebar">
         <!-- Write code for Sidebar-->
-        <h1 class="side-title">C<span class="material-icons">add_circle</span>DE PEN</h2>
+        <h1 class="side-title">C<span class="material-icons">add_circle</span>DE PEN</h1>
         <p>TRY OUR ONLINE EDITOR</p>
         <button>Start Coding</button>
         <h2 id="explore">EXPLORE</h2>
@@ -30,7 +30,7 @@
         <h2 id="grow">GROW</h2>
         <ul>
           <li><a href="">Jobs</a></li>
-          <li><a href="">CodePens<span>PRO</span></a></li>
+          <li><a href="">CodePens<span class="pro">PRO</span></a></li>
           <li><a href="">Topics</a></li>
         </ul>
         <h2 id="companies">COMPANIES</h2>
@@ -72,39 +72,222 @@
               <h1><span class="material-icons">add_circle</span><br>
               The best place to build, test, and discover front-end code.</h1>
               <p>CodePen is a social development environment for front-end designers and developers. Build and deploy a website, show off your work, build test cases to learn and debug, and find inspiration.</p>
-              <button>Sign Up for Free</button>
+              <button style="color: #000;">Sign Up for Free</button>
             </div>
             <div class="s-container">
-              <div class="image">
-                <div class="sm-image">
-                  <h2><span class="material-icons">settings</span>HTML</h2>
-                  <p></p>
+              <div class="img">
+                <div class="sm-img" id="sm-img-html">
+                  <h2>
+                    <span class="material-icons">settings</span>HTML
+                    <span class="material-icons down">keyboard_arrow_down</span>
+                  </h2>
+                  <p><code>&lt;div class="rect"&gt;&lt;/div&gt;</code></p>
                 </div>
-                <div class="sm-image">
-                  <h2><span class="material-icons">settings</span>SCSS</h2>
-                  <p></p>
+                <div class="sm-img" id="sm-img-scss">
+                  <h2>
+                    <span class="material-icons">settings</span>SCSS
+                    <span class="material-icons down">keyboard_arrow_down</span>
+                  </h2>
+<pre><span>.rect</span>{
+      background:linear-gradient(
+              -119deg,
+              $gray0%,
+              $dark-gray100%);
+</pre>
                 </div>
-                <div class="sm-image">
-                  <h2><span class="material-icons">settings</span>JS</h2>
-                  <p></p>
+                <div class="sm-img" id="sm-img-js">
+                  <h2>
+                    <span class="material-icons">settings</span>JS
+                    <span class="material-icons down">keyboard_arrow_down</span>
+                  </h2>
+<pre><code>var colors =
+["#74B087","#DE7300","#74B087"]
+
+funtion animate(){};
+</code></pre>
                 </div>
               </div>
             </div>
           </section>
         </div>
         <section class="l-section">
+
+          <!-- 特徴 ---------------------------------------------------->
           <div class="l-flex l-flex-wrap features">
              <!-- Write code for Features-->
+             <div class="feature">
+               <div><span class="material-icons icon">adb</span></div>
+               <h1>Build & Test</h1>
+               <p>Get work done wuicker by building out entire
+                projects or isolating code to test features and
+                animations. Want to keep it all under wraps?
+                <span class="blue"> Upgrade to a </span><span class="pro">PRO</span>
+                <span class="blue"> account</span> to keep your work
+                private.</p>
+               <button>Try the Editor</button>
+             </div>
+             <div class="feature">
+               <div><span class="material-icons icon">public</span></div>
+               <h1>Learn & Discover</h1>
+               <p>Just starting out? Browsing, forking, and playing with 
+                 Pens is a great way to understand how they were built and 
+                 how code works. Teaching a class? <span class="blue">Professor 
+                   mode</span> lets your students to see and comment on
+                    real-time Pen updates.</p>
+               <button>Learn More</button>
+             </div>
+             <div class="feature">
+               <div><span class="material-icons icon">forward</span></div>
+               <h1>Share Your Work</h1>
+               <p>Become a part of the most active front-end
+                  community in the world by sharing work.
+                  Presenting at a conference? Show your code
+                  directly in the browser with <span class="blue">Presentation
+                  Mode.</span></p>
+               <button>Explore Popular</button>
+             </div>
           </div>
         </section>
 
         <section class="l-section">
-          <div class="product-item-list">
-             <!-- Write code for Product List-->
+          <div class="product-item-list grid">
+            <!-- Write code for Product List-------------------------------------------->
+            <div class="pr-item">
+              <h1>Find inspiration from 1.8 million+ front-end designers 
+                  and developers.</h1>
+              <p>Browse and share work from world-class designers and 
+                developers in the front-end community.</p>
+              <a href="file:///Users/moritakumi/Desktop/ws-0100-codepen-copy/index.html#">
+                Explore Picked Pens →</a>
+            </div>
+            <div class="pr-item pr">
+              <img class="item-img" src="Retro Button.jpg" alt="itemの画像"><br>
+              <div class="user">
+                <div><img class="icon" src="icon.png" alt="アイコン"></div>
+                <div class="name">
+                  <h3>Pixel Dust</h3>
+                  <p>Paul Neave</p>
+                </div>
+              </div>
+              <ul>
+                <li><span class="material-icons">favorite</span>76</li>
+                <li><span class="material-icons">textsms</span>1</li>
+                <li><span class="material-icons">face</span>1,585</li>
+              </ul>
+            </div>
+            <div class="pr-item pr">
+              <img class="item-img" src="Retro Button.jpg" alt="itemの画像"><br>
+              <div class="user">
+                <div><img class="icon" src="icon.png" alt="アイコン"></div>
+                <div class="name">
+                  <h3>Pixel Dust</h3>
+                  <p>Paul Neave</p>
+                </div>
+              </div>
+              <ul>
+                <li><span class="material-icons">favorite</span>76</li>
+                <li><span class="material-icons">textsms</span>1</li>
+                <li><span class="material-icons">face</span>1,585</li>
+              </ul>
+            </div>
+            <div class="pr-item pr">
+              <img class="item-img" src="Retro Button.jpg" alt="itemの画像"><br>
+              <div class="user">
+                <div><img class="icon" src="icon.png" alt="アイコン"></div>
+                <div class="name">
+                  <h3>Pixel Dust</h3>
+                  <p>Paul Neave</p>
+                </div>
+              </div>
+              <ul>
+                <li><span class="material-icons">favorite</span>76</li>
+                <li><span class="material-icons">textsms</span>1</li>
+                <li><span class="material-icons">face</span>1,585</li>
+              </ul>
+            </div>
+            <div class="pr-item pr">
+              <img class="item-img" src="Retro Button.jpg" alt="itemの画像"><br>
+              <div class="user">
+                <div><img class="icon" src="icon.png" alt="アイコン"></div>
+                <div class="name">
+                  <h3>Pixel Dust</h3>
+                  <p>Paul Neave</p>
+                </div>
+              </div>
+              <ul>
+                <li><span class="material-icons">favorite</span>76</li>
+                <li><span class="material-icons">textsms</span>1</li>
+                <li><span class="material-icons">face</span>1,585</li>
+              </ul>
+            </div>
+            <div class="pr-item pr">
+              <img class="item-img" src="Retro Button.jpg" alt="itemの画像"><br>
+              <div class="user">
+                <div><img class="icon" src="icon.png" alt="アイコン"></div>
+                <div class="name">
+                  <h3>Pixel Dust</h3>
+                  <p>Paul Neave</p>
+                </div>
+              </div>
+              <ul>
+                <li><span class="material-icons">favorite</span>76</li>
+                <li><span class="material-icons">textsms</span>1</li>
+                <li><span class="material-icons">face</span>1,585</li>
+              </ul>
+            </div>
           </div>
         </section>
+        <div class="pg-btn">
+          <button>Prev</button>
+          <button>Next</button>
+        </div>
         <footer class="l-footer l-flex l-flex-wrap footer">
-             <!-- Write code for Footer List-->
+          <!-- Write code for Footer List------------------------------------->
+          <div class="ft-lists">
+            <div class="ft-li">
+              <h3>CodePen</h3>
+              <ul>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Advertising</li>
+                <li>Docs</li>
+                <li>Support</li>
+                <li>Shop</li>
+              </ul>
+            </div>
+            <div class="ft-li">
+              <h3>For</h3>
+              <ul>
+                <li>Teams</li>
+                <li>Education</li>
+                <li>Privacy</li>
+                <li>Documentation</li>
+              </ul>
+            </div>
+            <div class="ft-li">
+              <h3>Social</h3>
+              <ul>
+                <li>Challenges</li>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>Instagram</li>
+              </ul>
+            </div>
+            <div class="ft-li">
+              <h3>Community</h3>
+              <ul>
+                <li>Spectrum</li>
+                <li>Teams</li>
+                <li>Code of Conduct</li>
+                <li>Jobs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft-logo">
+            <h1 class="side-title">C<span class="material-icons">add_circle</span>DE PEN</h1>
+            <p><small>&copy;2020 CodePen</small><br>
+            Demo or it didn't happen.</p>
+          </div>
         </footer>
       </main>
     </div>
