@@ -4,296 +4,46 @@
     align-items: center
 .l-flex-wrap
     flex-wrap: wrap
-$background-color2: #333
 
-
-/* サイドバー ----------------------------------------------- */ 
 #sidebar 
     width: 200px
     padding-top: 25px 
-    background: $background-color2
-    
-
-    h1
-        text-align: center
-        margin: 0
-    p
-        font-size: 13px
-        margin-bottom: 0
-        text-align: center
-    button
-        width: 160px
-        height: 40px
-        background: #000
-        font-size: 15px
-        /* border-image: linear-gradient(#f6b73c, #4d9f0c) 30 */
-        border: 1px solid lightgreen
-        border-radius: 5px
-        margin-left: 20px
-    h2
-        margin: 15px 0 5px 20px
-        font-size: 13px
-    #explore
-        color: orange
-    #grow
-        color: green
-        span
-            color: orange
-            display: inline-block
-            background: yellow
-    #companies
-        color: skyblue
-    ul
-        padding: 0
-        margin-top: 5px
-    a
-        display: block
-        padding-left: 20px
-    a:hover
-        background: #000
-
-.pro
-    display: inline-block
-    background: yellow
-    border-radius: 5px
-    font: #000
-    padding: 2px
-    font-size: 10px
-    color: black
         
-
-/* メイン ----------------------------------------------- */ 
 #main 
     width: calc(100% - 200px)
     padding: 5px
 
-/* ヘッダー ----------------------------------- */
 .l-header
-    display: flex
-    justify-content: space
-    width: 100%
-    input
-        min-width: 200px
-        width: calc(100% - 40px)
-        margin: 3px
-        background: $background-color2
-        border: $background-color2
-        border-radius: 5px
-        font-size: 20px
-    button
-        min-width: 100px
-        height: 40px
-        font-size: 14px
-        border-radius: 5px
-        margin-left: 10px
-    .sign-up
-        background: #28a44a
-        border: #28a44a
-    .log-in
-        background: #444
-        border: #444    
+	display: flex
+	justify-content: space
+	width: 100%
 
-    .search
-        background: $background-color2
-        width: calc(100% - 250px)
-        min-width: 250px
-        border: 1px solid #333
-        border-radius: 5px
-        display: flex
-        span
-            height: 40px
-            width: 40px
-            position: relative
-            top: 8px
-            left: 5px
-
-/* メイン--------------------------- */
 .l-section
-    display: flex
+	display: flex
 
 .hero
-    width: 50%
-    padding: 50px 30px
-    h1
-        font-size: 45px
-    button
-        background: #28a44a
-        border: #28a44a
-        border-radius: 5px
-        height: 50px
-        width: 200px
-        font-size: 20px
+	width: 50%
+	padding: 50px 30px
 
 .s-container
-    width: 50%
+	width: 50%
     
 .img
-    background: #444
-    width: 500px
-    height: 400px
-    margin: 60px auto
-    border-radius: 5px
-    
-.sm-img
-    margin-top: 8px
-    width: 300px
-    height: 140px
-    background: #222
-    padding: 3px
-    border-radius: 5px
-    span
-        font-size: 13px
-        margin: 0 5px
-        color: silver
-        vertical-align: -1px
-    h2
-        margin: 0
-        font-size: 13px
-    p
-        margin: 0
-    pre
-        margin: 0
-.down
-    position: relative
-    left: 210px
-    line-height: 20px
-#sm-img-html
-    position: relative
-    top: -20px
-    right: -130px
-#sm-img-scss
-    position: relative
-    top: -20px
-    right: -180px
-#sm-img-js
-    position: relative
-    top: -20px
-    right: -130px
-
-/* 特徴-------------------------------------- */
-.features
-    margin-left: 120px
-.feature
-    background: #444
-    margin: 60px 20px
-    width: 350px
-    height: 350px
-    border-radius: 5px
-    padding: 0 25px
-    .icon
-        background: #000
-        height: 70px
-        width: 70px
-        font-size: 50px
-        line-height: 70px
-        text-align: center
-        border-radius: 5px
-        position: relative
-        top: -35px
-    h1
-        margin-top: 0
-    p
-        color: #bbb
-    button
-        height: 40px
-        background: #777
-        border: #777
-        border-radius: 5px
-        font-size: 16px
-        padding: 8px 16px
-
-.blue
-    color: skyblue
+	width: 500px
+	height: 400px
+	margin: 60px auto
+	border-radius: 5px
 
 .pr-item-list
-    width: 100%
+  width: 100%
 
 .grid
-    display: grid
-    gap: 40px
-    grid-template-columns: repeat(auto-fit, 1fr)
-    margin-left: 140px
+	display: grid
+	gap: 40px
+	grid-template-columns: repeat(auto-fit, 1fr)
+	margin-left: 140px
 
 .pr-item
-    width: 350px
-    height: 300px
-    background: #444
-    border-radius: 5px
-    .item-img
-        height: 200px
-        width: 140px
-        margin: 0 105px
-    .icon
-        height: 45px
-        border-radius: 5px
-        margin: 5px 10px
-    ul
-        display: flex
-        padding: 0
-        margin: 0 10px
-    li
-        margin-right: 10px
-        padding: 3px
-        background: #000
-        border-radius: 5px
-        span
-            font-size: 20px
-            vertical-align: -4px
-            padding-right: 3px
-
-.pr:hover
-    opacity: 0.4
-    transform: scale(1.05)
-    cursor: pointer
-    transition: .2s
-
-
-.user
-    display: flex
-    h3
-        margin: 5px 0 0 0
-    p
-        margin: 0
-
-.pg-btn
-    text-align: center
-    button
-        font-size: 20px
-        background: #131417
-        border: 3px solid #aaa
-        border-radius: 5px
-        padding: 10px 20px
-        margin: 20px 2px
-
-.l-footer
-    background: #000
-    display: flex
-    justify-content: space-between
-
-
-.ft-lists
-    display: flew
-    flew-direction: column
-    padding: 40px 20px
-.ft-li
-    display: flex
-    h3
-        font-size: 16px
-        margin: 10px 
-    ul
-        display: flex
-        padding: 0
-        margin: 10px
-    li
-        font-size: 16px
-        margin-right: 15px
-        color: #ccc
-
-.ft-logo
-    margin: 40px 20px
-    small
-        font-size: 16px
-        color: #ccc
-    p
-        color: #ccc
-    
+	width: 350px
+	height: 300px
+	border-radius: 5px

@@ -1,11 +1,11 @@
 html
-    font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif
-    line-height: 1.5
-    font-size: 15px
-    font-weight: 400
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif
+  line-height: 1.5
+  font-size: 15px
+  font-weight: 400
 
 $background-color: #131417
-
+$background-color2: #333
 body
   padding: 0
   margin: 0
@@ -21,6 +21,60 @@ ul
 a
   text-decoration: none
 
-button:hover
-  opacity: 0.8
-  cursor: pointer
+
+// サイドバー----------------------------------
+#sidebar 
+  background: $background-color2
+  h1
+    text-align: center
+    margin: 0
+  p
+    font-size: 13px
+    margin-bottom: 0
+    text-align: center
+  h2
+    margin: 15px 0 5px 20px
+    font-size: 13px
+
+// メイン----------------------------------
+
+// ヘッダー----------------------------
+
+
+.img
+	background: #444
+
+
+.hero
+	h1
+		font-size: 45px
+
+.sm-img
+	background: #222
+	span
+		font-size: 13px
+		color: silver
+	h2
+		font-size: 13px
+
+/* 特徴-------------------------------------- */
+.feature
+  background: #444
+  .ft-icon
+    background: #000
+    height: 70px
+    width: 70px
+    font-size: 50px
+    line-height: 70px
+    text-align: center
+    border-radius: 5px
+    position: relative
+    top: -35px
+
+.blue
+  color: skyblue
+
+.l-footer
+	background: #000
+	display: flex
+	justify-content: space-between
