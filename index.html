@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Code Pen Copy</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width", initial-scale=1>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <!-- font-awesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -16,30 +16,30 @@
     <div class="l-flex l-container">
       <!-- サイドバー
       ----------------------------------------------->
-      <div class="l-sidebar sidebar" id="sidebar">
+      <div class="l-sidebar sidebar">
         <!-- Write code for Sidebar-->
         <h1 class="side-title">C<span class="material-icons">add_circle</span>DE PEN</h1>
         <p>TRY OUR ONLINE EDITOR</p>
-        <button>Start Coding</button>
-        <h2 id="explore">EXPLORE</h2>
+        <button class="s-btn"><span class="s-btn-logo">Start Coding</span></button>
+        <h2 class="explore">EXPLORE</h2>
         <ul>
           <li><a href="">Picks</a></li>
           <li><a href="">Popular</a></li>
           <li><a href="">Topics</a></li>
         </ul>
-        <h2 id="grow">GROW</h2>
+        <h2 class="grow">GROW</h2>
         <ul>
           <li><a href="">Jobs</a></li>
           <li><a href="">CodePens<span class="pro">PRO</span></a></li>
           <li><a href="">Topics</a></li>
         </ul>
-        <h2 id="companies">COMPANIES</h2>
+        <h2 class="companies">COMPANIES</h2>
         <ul>
           <li><a href="">Hire Talent</a></li>
           <li><a href="">Create a Team</a></li>
           <li><a href="">Advertise</a></li>
         </ul>
-        <ul id="side-nav">
+        <ul class="side-nav">
           <li><a href="">Newletter</a></li>
           <li><a href="">Blog</a></li>
           <li><a href="">Doc&Support</a></li>
@@ -48,7 +48,7 @@
 
       <!-- メイン 
       ------------------------------------------------------------------>
-      <main class="l-main" id="main">
+      <main class="l-main">
         <!-- ヘッダー ------------------------------------------------>
         <header class="l-header">
           <!-- Write code for Header-->
@@ -64,9 +64,8 @@
           </button>
         </header>
 
-
         <div class="l-content">
-          <section class="l-section">
+          <section class="l-section l-flex l-flex-wrap">
             <div class="hero">
               <!-- Write code for Hero-->
               <h1><span class="material-icons">add_circle</span><br>
@@ -76,42 +75,43 @@
             </div>
             <div class="s-container">
               <div class="img">
-                <div class="sm-img" id="sm-img-html">
+                <div class="sm-img sm-img-html">
                   <h2>
-                    <span class="material-icons">settings</span>HTML
+                    <span class="material-icons gear">settings</span>HTML
                     <span class="material-icons down">keyboard_arrow_down</span>
                   </h2>
-                  <p><code>&lt;div class="rect"&gt;&lt;/div&gt;</code></p>
+                  <p><span class="hilight-orange">&lt;div</span><span class="hilight-beige">class</span>=<span class="hilight-green">"rect"</span><span class="hilight-orange">&gt;&lt;/div&gt;</span></p>
                 </div>
-                <div class="sm-img" id="sm-img-scss">
+                <div class="sm-img sm-img-scss">
                   <h2>
-                    <span class="material-icons">settings</span>SCSS
+                    <span class="material-icons gear">settings</span>SCSS
                     <span class="material-icons down">keyboard_arrow_down</span>
                   </h2>
-<pre><span>.rect</span>{
-      background:linear-gradient(
-              -119deg,
-              $gray0%,
-              $dark-gray100%);
+<pre><span class="hilight-beige">.rect</span>{
+      <span class="hilight-purple">background</span>:<span class="hilight-beige">linear-gradient</span>(
+              <span class="hilight-orange">-119deg</span>,
+              <span class="hilight-beige">$gray</span><span class="hilight-orange">0%</span>,
+              <span class="hilight-beige">$dark-gray</span><span class="hilight-orange">100%</span>);
+              
 </pre>
                 </div>
-                <div class="sm-img" id="sm-img-js">
+                <div class="sm-img sm-img-js">
                   <h2>
-                    <span class="material-icons">settings</span>JS
+                    <span class="material-icons gear">settings</span>JS
                     <span class="material-icons down">keyboard_arrow_down</span>
                   </h2>
-<pre><code>var colors =
-["#74B087","#DE7300","#74B087"]
+<pre><span class="hilight-beige">var</span> <span class="hilight-blue">colors</span> =
+[<span class="hilight-green">"#74B087"</span>,<span class="hilight-green">"#DE7300"</span>,<span class="hilight-green">"#74B087"</span>]
 
-funtion animate(){};
-</code></pre>
+<span class="hilight-beige">funtion</span> <span class="hilight-blue">animate</span>(){};
+</pre>
                 </div>
               </div>
             </div>
           </section>
         </div>
-        <section class="l-section">
 
+        <section class="l-section">
           <!-- 特徴 ---------------------------------------------------->
           <div class="l-flex l-flex-wrap features">
             <!-- Write code for Features-->
@@ -150,7 +150,7 @@ funtion animate(){};
         </section>
 
         <section class="l-section">
-          <div class="product-item-list grid">
+          <div class="product-item-list l-flex-wrap">
             <!-- Write code for Product List-------------------------------------------->
             <div class="pr-item">
               <h1>Find inspiration from 1.8 million+ front-end designers 
@@ -190,6 +190,8 @@ funtion animate(){};
                 <li><span class="material-icons">face</span>1,585</li>
               </ul>
             </div>
+          </div>
+          <div class="product-item-list l-flex-wrap">
             <div class="pr-item pr">
               <img class="item-img" src="Retro Button.jpg" alt="itemの画像"><br>
               <div class="user">

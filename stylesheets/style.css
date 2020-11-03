@@ -20,54 +20,8 @@ ul {
 a {
   text-decoration: none; }
 
-#sidebar {
-  background: #333; }
-  #sidebar h1 {
-    text-align: center;
-    margin: 0; }
-  #sidebar p {
-    font-size: 13px;
-    margin-bottom: 0;
-    text-align: center; }
-  #sidebar h2 {
-    margin: 15px 0 5px 20px;
-    font-size: 13px; }
-
-.img {
-  background: #444; }
-
-.hero h1 {
-  font-size: 45px; }
-
-.sm-img {
-  background: #222; }
-  .sm-img span {
-    font-size: 13px;
-    color: silver; }
-  .sm-img h2 {
-    font-size: 13px; }
-
-/* 特徴-------------------------------------- */
-.feature {
-  background: #444; }
-  .feature .ft-icon {
-    background: #000;
-    height: 70px;
-    width: 70px;
-    font-size: 50px;
-    line-height: 70px;
-    text-align: center;
-    border-radius: 5px;
-    position: relative;
-    top: -35px; }
-
 .blue {
   color: skyblue; }
-
-.l-footer {
-  background: #000;
-  display: flex;
-  justify-content: space-between; }
 
 .l-flex {
   display: flex; }
@@ -78,21 +32,17 @@ a {
 .l-flex-wrap {
   flex-wrap: wrap; }
 
-#sidebar {
+.l-sidebar {
   width: 200px;
   padding-top: 25px; }
 
-#main {
+.l-main {
   width: calc(100% - 200px);
   padding: 5px; }
 
 .l-header {
   display: flex;
-  justify-content: space;
-  width: 100%; }
-
-.l-section {
-  display: flex; }
+  justify-content: space; }
 
 .hero {
   width: 50%;
@@ -110,29 +60,50 @@ a {
 .pr-item-list {
   width: 100%; }
 
-.grid {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  margin-left: 140px; }
+.l-flex-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
 
 .pr-item {
   width: 350px;
   height: 300px;
   border-radius: 5px; }
 
+/*  レスポンシブ */
+@media screen and (max-width: 576px) {
+  .l-sidebar {
+    display: none; }
+  .l-main {
+    width: 100%; }
+  .hero {
+    width: 100% !important; }
+  .s-container {
+    width: 100% !important; }
+  .ft-logo {
+    margin: 0 20px !important; }
+  .ft-lists {
+    padding: 40px 20px 0px 20px !important; } }
+
 button:hover {
   opacity: 0.8;
   cursor: pointer; }
 
-#sidebar button {
+.s-btn {
+  background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
   width: 160px;
   height: 40px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 3px; }
+
+.s-btn-logo {
+  display: block;
   background: #000;
   font-size: 15px;
-  border: 1px solid lightgreen;
-  border-radius: 5px;
-  margin-left: 20px; }
+  padding: 8px;
+  width: 100%; }
 
 .l-header button {
   min-width: 100px;
@@ -181,6 +152,7 @@ button:hover {
     margin: 20px 2px; }
 
 .pr-item {
+  margin: 30px 20px;
   background: #444; }
   .pr-item .item-img {
     height: 200px;
@@ -217,47 +189,75 @@ button:hover {
   .user p {
     margin: 0; }
 
+.img {
+  background: #444; }
+
+.hero h1 {
+  font-size: 45px; }
+
 .sm-img {
+  background: #222;
   margin-top: 8px;
   width: 300px;
   height: 140px;
   padding: 3px;
   border-radius: 5px; }
   .sm-img span {
-    margin: 0 5px;
-    color: silver;
+    font-size: 13px;
+    margin: 0px;
     vertical-align: -1px; }
   .sm-img h2 {
+    font-size: 13px;
     margin: 0; }
   .sm-img p {
     margin: 0; }
   .sm-img pre {
     margin: 0; }
 
+.gear {
+  color: silver;
+  margin: 0 5px !important; }
+
 .down {
   position: relative;
   left: 210px;
   line-height: 20px; }
 
-#sm-img-html {
+.sm-img-html {
   position: relative;
   top: -20px;
   right: -130px; }
 
-#sm-img-scss {
+.sm-img-scss {
   position: relative;
   top: -20px;
   right: -180px; }
 
-#sm-img-js {
+.sm-img-js {
   position: relative;
   top: -20px;
   right: -130px; }
+
+.hilight-orange {
+  color: orange; }
+
+.hilight-beige {
+  color: beige; }
+
+.hilight-green {
+  color: #74b087; }
+
+.hilight-purple {
+  color: #9f8198; }
+
+.hilight-blue {
+  color: #7a99ad; }
 
 .features {
   margin: 0 auto; }
 
 .feature {
+  background: #444;
   margin: 60px 20px;
   width: 350px;
   height: 350px;
@@ -267,6 +267,17 @@ button:hover {
     margin-top: 0; }
   .feature p {
     color: #bbb; }
+
+.ft-icon {
+  position: relative;
+  top: -35px;
+  background: #000;
+  height: 70px;
+  width: 70px;
+  font-size: 50px !important;
+  line-height: 70px !important;
+  text-align: center;
+  border-radius: 5px; }
 
 .ft-lists {
   display: flex;
@@ -295,6 +306,11 @@ button:hover {
   .ft-logo p {
     color: #ccc; }
 
+.l-footer {
+  background: #000;
+  display: flex;
+  justify-content: space-between; }
+
 .l-header input {
   min-width: 200px;
   width: calc(100% - 40px);
@@ -320,28 +336,28 @@ button:hover {
     top: 8px;
     left: 5px; }
 
-#sidebar #explore {
+.sidebar .explore {
   color: orange; }
 
-#sidebar #grow {
+.sidebar .grow {
   color: green; }
-  #sidebar #grow span {
+  .sidebar .grow span {
     color: orange;
     display: inline-block;
     background: yellow; }
 
-#sidebar #companies {
+.sidebar .companies {
   color: skyblue; }
 
-#sidebar ul {
+.sidebar ul {
   padding: 0;
   margin-top: 5px; }
 
-#sidebar a {
+.sidebar a {
   display: block;
   padding-left: 20px; }
 
-#sidebar a:hover {
+.sidebar a:hover {
   background: #000; }
 
 .pro {
@@ -352,3 +368,19 @@ button:hover {
   padding: 2px;
   font-size: 10px;
   color: black; }
+
+.sidebar {
+  background: #333; }
+  .sidebar h1 {
+    text-align: center;
+    margin: 0; }
+  .sidebar p {
+    font-size: 13px;
+    margin-bottom: 0;
+    text-align: center; }
+  .sidebar h2 {
+    margin: 15px 0 5px 20px;
+    font-size: 13px; }
+
+.side-nav a {
+  color: #bbb; }

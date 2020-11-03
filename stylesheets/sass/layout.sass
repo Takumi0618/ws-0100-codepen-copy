@@ -1,25 +1,21 @@
 .l-flex
-    display: flex
+	display: flex
 .l-align-center
-    align-items: center
+	align-items: center
 .l-flex-wrap
-    flex-wrap: wrap
+	flex-wrap: wrap
 
-#sidebar 
-    width: 200px
-    padding-top: 25px 
+.l-sidebar 
+	width: 200px
+	padding-top: 25px 
         
-#main 
-    width: calc(100% - 200px)
-    padding: 5px
+.l-main 
+	width: calc(100% - 200px)
+	padding: 5px
 
 .l-header
 	display: flex
 	justify-content: space
-	width: 100%
-
-.l-section
-	display: flex
 
 .hero
 	width: 50%
@@ -37,13 +33,30 @@
 .pr-item-list
   width: 100%
 
-.grid
-	display: grid
-	gap: 40px
-	grid-template-columns: repeat(auto-fit, 1fr)
-	margin-left: 140px
+.l-flex-wrap
+	width: 100%
+	display: flex
+	justify-content: center
 
 .pr-item
 	width: 350px
 	height: 300px
 	border-radius: 5px
+
+
+/*  レスポンシブ */
+@media screen and (max-width: $screen-sm-min) 
+	.l-sidebar
+		display: none
+	.l-main
+		width: 100%
+	.hero
+		width: 100% !important
+	.s-container
+		width: 100% !important
+	.ft-logo
+		margin: 0 20px !important
+	.ft-lists
+		padding: 40px 20px 0px 20px !important
+	
+
